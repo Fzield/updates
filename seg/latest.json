@@ -2,6 +2,18 @@
   "product": "fzield-seg",
   "releases": [
     {
+      "version": "1.6.1",
+      "date": "2026-10-30",
+      "security": false,
+      "breaking": true,
+      "summary": "URLhaus di nuovo aggiornato: dal 21 ottobre abuse.ch richiede la Auth-Key gratuita.",
+      "notes": [
+        "Le liste URLhaus si scaricano dal nuovo export di abuse.ch, che richiede la Auth-Key. Da fare dopo l'aggiornamento: in Protezione link inserisci la Auth-Key (gratuita, da auth.abuse.ch). È la stessa usata per MalwareBazaar in Quarantena.",
+        "Senza chiave il pannello lo dice chiaramente invece di mostrare \"download non riuscito (410)\".",
+        "Il comando di backup suggerito non mostra più gli avvisi sui socket di Postfix e Rspamd."
+      ]
+    },
+    {
       "version": "1.6.0",
       "date": "2026-10-30",
       "security": false,
@@ -15,6 +27,6 @@
       ]
     }
   ],
-  "latest": "1.6.0",
-  "updated": "2026-10-30T00:59:35Z"
+  "latest": "1.6.1",
+  "updated": "2026-10-30T02:36:29Z"
 }
