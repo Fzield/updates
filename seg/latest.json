@@ -1,0 +1,20 @@
+{
+  "product": "fzield-seg",
+  "releases": [
+    {
+      "version": "1.6.0",
+      "date": "2026-10-30",
+      "security": false,
+      "breaking": false,
+      "summary": "Nuovo nome, Fzield SEG, e avviso delle nuove versioni nel pannello.",
+      "notes": [
+        "Pannello, pagina di accesso e certificati con il nome Fzield SEG; pagina di accesso essenziale.",
+        "Sistema → Aggiornamenti: controllo giornaliero delle nuove versioni, note di rilascio e comandi per aggiornare. Disattivabile dal pannello o con MXGATE_UPDATE_CHECK=off.",
+        "Immagine pubblicata su ghcr.io/fzield/seg: compose.yaml usa l'immagine invece di costruirla in locale.",
+        "La versione dell'immagine viene dal file VERSION, impostato dalla pipeline di rilascio."
+      ]
+    }
+  ],
+  "latest": "1.6.0",
+  "updated": "2026-10-30T00:59:35Z"
+}
