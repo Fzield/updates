@@ -2,6 +2,18 @@
   "product": "fzield-seg",
   "releases": [
     {
+      "version": "1.6.2",
+      "date": "2026-10-30",
+      "security": false,
+      "breaking": false,
+      "summary": "Kit di installazione incluso nell'immagine.",
+      "notes": [
+        "`docker run --rm ghcr.io/fzield/seg:1 kit | tar -x -C /opt` estrae in /opt/fzield-seg compose.yaml, .env.example, resolv.conf, esempio di override, guida di installazione e licenze: basta il token del registry, nessun file da ricevere a parte.",
+        "`kit <file>` stampa un solo file, ad esempio `kit compose.yaml > compose.yaml` per aggiornarlo.",
+        "Guida di installazione riordinata in sequenza cronologica."
+      ]
+    },
+    {
       "version": "1.6.1",
       "date": "2026-10-30",
       "security": false,
@@ -27,6 +39,6 @@
       ]
     }
   ],
-  "latest": "1.6.1",
-  "updated": "2026-10-30T02:36:29Z"
+  "latest": "1.6.2",
+  "updated": "2026-11-09T14:26:52Z"
 }
