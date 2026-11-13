@@ -2,6 +2,20 @@
   "product": "fzield-seg",
   "releases": [
     {
+      "version": "1.7.0",
+      "date": "2026-11-13",
+      "security": false,
+      "breaking": false,
+      "summary": "Cluster di configurazione: fino a quattro gateway con la stessa configurazione, gestita dal master.",
+      "notes": [
+        "Gateway → Cluster: si crea il cluster sul gateway già configurato, che diventa master, e si aggiungono fino a tre member con un token monouso. Per chi resta standalone non cambia nulla.",
+        "Sui member arrivano da soli configurazione, chiavi DKIM, chiave dei link riscritti, utenti del pannello con password e 2FA, impostazioni SSO. Restano propri di ogni nodo hostname, rete, certificati, coda, quarantena e log; facoltativi resolver DNS e URL del pannello per l'SSO.",
+        "Quarantena e Log mostrano i messaggi di tutti i nodi, con la colonna Nodo; rilascio, download e header funzionano da qualsiasi nodo.",
+        "Promozione manuale di un member a master; il vecchio master, quando torna, diventa member da solo.",
+        "Traffico tra i nodi sulla porta 8444/tcp (TLS con impronta del certificato verificata, richieste firmate). Con rete bridge va pubblicata nell'override, solo sull'interfaccia interna: vedi il manuale. Serve NTP sugli host."
+      ]
+    },
+    {
       "version": "1.6.2",
       "date": "2026-10-30",
       "security": false,
@@ -39,6 +53,6 @@
       ]
     }
   ],
-  "latest": "1.6.2",
-  "updated": "2026-11-09T14:26:52Z"
+  "latest": "1.7.0",
+  "updated": "2026-11-13T00:52:46Z"
 }
