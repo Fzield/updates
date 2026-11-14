@@ -1,0 +1,22 @@
+{
+  "product": "fzield-waf",
+  "releases": [
+    {
+      "version": "1.0.0",
+      "date": "2026-11-13",
+      "security": false,
+      "breaking": false,
+      "summary": "First release distributed as an image: one image for every component, installed and updated from the registry.",
+      "notes": [
+        "One image, ghcr.io/fzield/waf, runs the control plane, the data plane, the console, the learning engine and the Kubernetes ingress controller, each as its own unprivileged user and group.",
+        "Hardened image on Ubuntu 24.04: no shell, no package manager; a component can neither execute nor read the other programs of the image; the control plane, the data plane and the ingress controller cannot start any program at all; read-only file systems and no capabilities in compose.yaml.",
+        "The installation kit (compose.yaml, examples, guide, licence) is inside the image: docker run --rm ghcr.io/fzield/waf:1 kit | tar -x -C /opt.",
+        "Updates in the console: a daily check for new versions, with their notes and the commands to run (it can be turned off, also with WAF_UPDATE_CHECK=off).",
+        "Weekly rebuild with the security updates of Ubuntu, published as a patch release when packages change.",
+        "Installations built from the sources move to the image keeping their data (same project name, services, volumes and settings): INSTALLATION.md, \"Moving an installation built from the sources\"."
+      ]
+    }
+  ],
+  "latest": "1.0.0",
+  "updated": "2026-11-14T00:18:30Z"
+}
