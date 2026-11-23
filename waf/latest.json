@@ -2,6 +2,19 @@
   "product": "fzield-waf",
   "releases": [
     {
+      "version": "1.0.1",
+      "date": "2026-11-23",
+      "security": true,
+      "breaking": false,
+      "summary": "Security updates of the Ubuntu packages in the image.",
+      "notes": [
+        "libsystemd0 255.4-1ubuntu8.18 → 255.4-1ubuntu8.19",
+        "libudev1 255.4-1ubuntu8.18 → 255.4-1ubuntu8.19",
+        "nginx 1.24.0-2ubuntu7.19 → 1.24.0-2ubuntu7.21",
+        "nginx-common 1.24.0-2ubuntu7.19 → 1.24.0-2ubuntu7.21"
+      ]
+    },
+    {
       "version": "1.0.0",
       "date": "2026-11-13",
       "security": false,
@@ -17,6 +30,6 @@
       ]
     }
   ],
-  "latest": "1.0.0",
-  "updated": "2026-11-14T00:18:30Z"
+  "latest": "1.0.1",
+  "updated": "2026-11-23T13:13:27Z"
 }
