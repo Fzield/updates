@@ -2,6 +2,17 @@
   "product": "fzield-seg",
   "releases": [
     {
+      "version": "1.7.1",
+      "date": "2026-11-23",
+      "security": true,
+      "breaking": false,
+      "summary": "Aggiornamenti di sicurezza dei pacchetti Ubuntu inclusi nell'immagine.",
+      "notes": [
+        "libsystemd0 255.4-1ubuntu8.18 → 255.4-1ubuntu8.19",
+        "libudev1 255.4-1ubuntu8.18 → 255.4-1ubuntu8.19"
+      ]
+    },
+    {
       "version": "1.7.0",
       "date": "2026-11-13",
       "security": false,
@@ -53,6 +64,6 @@
       ]
     }
   ],
-  "latest": "1.7.0",
-  "updated": "2026-11-13T00:52:46Z"
+  "latest": "1.7.1",
+  "updated": "2026-11-23T12:55:45Z"
 }
