@@ -2,6 +2,20 @@
   "product": "fzield-waf",
   "releases": [
     {
+      "version": "1.0.2",
+      "date": "2026-11-27",
+      "security": false,
+      "breaking": false,
+      "summary": "Restricted-header blocks (CRS 920450) now name the right header, and exceptions for them apply reliably.",
+      "notes": [
+        "Events of CRS 920450/920451 (restricted HTTP headers, such as the If header sent by WebDAV clients) showed an arbitrary header of the request as the location, and exceptions created from them got that header as target, so they applied only some of the time. Each restricted header is now reported on its own, for example REQUEST_HEADERS_NAMES:If.",
+        "Exceptions for 920450/920451 with a header target created before 1.0.2 no longer apply: delete them and create them again from a new event, or with the target REQUEST_HEADERS_NAMES:<header>.",
+        "A request with two restricted headers now scores both, as the Core Rule Set does.",
+        "Header names in exception targets are compared without regard to case.",
+        "Installation guide: registry access with your own GitHub account and a classic read:packages token; backup and restore of the project of the folder; a second installation on the same host."
+      ]
+    },
+    {
       "version": "1.0.1",
       "date": "2026-11-23",
       "security": true,
@@ -30,6 +44,6 @@
       ]
     }
   ],
-  "latest": "1.0.1",
-  "updated": "2026-11-23T13:13:27Z"
+  "latest": "1.0.2",
+  "updated": "2026-11-27T15:56:30Z"
 }
